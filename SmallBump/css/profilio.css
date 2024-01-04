@@ -1,0 +1,73 @@
+.heroBox-right-text-bottom {
+  color: var(--thirdColor);
+  font-family: var(--firstFont);
+  font-size: 0.8rem;
+}
+@media screen and (min-width:600px) {
+  .heroBox-right-text-bottom {
+    font-size: 2rem !important;
+  }
+  .contentImg {
+
+    max-height: 360px !important;
+
+  }
+}
+@media only screen and (max-width:620px) {
+  .imageHeader {
+    font-size: 1rem !important;
+   }
+   .imageDesc {
+ font-size: 0.8rem !important;
+  }
+}
+.filterItem {
+  transition: 1s;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  top: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: var(--firstFont);
+}
+.filterCont {
+  position: relative;
+  height: 45px;
+  overflow-x: scroll;
+  border-bottom: 2px solid rgb(174, 174, 174);
+}
+.underlineFilterItem {
+  transition: 1s;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  z-index: 10;
+  height: 3px;
+  background-color: var(--seventhColor);
+}
+.contentImg {
+  width: 100%;
+  transition: 1s;
+  height: 0px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.imageHeader {
+  font-family: var(--firstFont);
+  font-size: 2rem;
+  color: var(--firstColor);
+}
+.imageDesc {
+  font-family: var(--firstFont);
+  font-size: 1.5rem;
+  color: var(--secondColor);
+}
+.contentImgHolder {
+  transition: all 1s;
+  transform-origin: 20% 50%;
+transform: scale(1);
+}
+.contentImgHolder:hover {
+    transform: scale(2);
+}
